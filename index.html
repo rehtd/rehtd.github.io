@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Qunji Lin — Aspiring AI Product Manager in Hong Kong. Master of Business AI @ City University of Hong Kong. Portfolio featuring RAG, LLM, and data analytics projects." />
+  <meta name="description" content="Qunji Lin — Aspiring AI Product Manager in Hong Kong. MSc Artificial Intelligence in Business @ City University of Hong Kong. Portfolio: AI lecture interpreter (open source), bilingual RAG Q&A, and job-market intelligence." />
   <meta name="author" content="Qunji Lin" />
   <meta name="theme-color" content="#0a1929" />
   <title>Qunji Lin — Aspiring AI Product Manager in Hong Kong</title>
@@ -42,7 +42,7 @@
           <span class="hero-sub">Aspiring AI Product Manager in Hong Kong</span>
         </h1>
         <p class="hero-meta">
-          Master of Business AI @ City University of Hong Kong <span class="dot">·</span> 2026 – 2027
+          MSc Artificial Intelligence in Business @ City University of Hong Kong <span class="dot">·</span> 2026 – 2027
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -59,11 +59,14 @@
       <div class="container narrow">
         <h2 class="section-title">About</h2>
         <p class="about-text">
-          I am a software-engineering graduate currently pursuing a Master of Business AI
-          at City University of Hong Kong. Through hands-on projects in retrieval-augmented
-          generation and data analytics, I am transitioning into the AI product space,
-          with a focus on turning machine-learning capabilities into clear, measurable
-          user value. I am looking for opportunities as an AI Product Manager where I
+          I am a software-engineering graduate now pursuing an MSc in Artificial
+          Intelligence in Business at City University of Hong Kong. I build AI
+          products the way I run my own projects: define a real problem, ship a
+          working prototype with AI, and validate every decision with measurements
+          rather than vibes. My recent work spans a bilingual RAG assistant with a
+          held-out evaluation harness, an open-source lecture interpreter I use in
+          class every day, and a market-intelligence platform that tracks 2,800+
+          live AI/PM roles in Hong Kong. I am looking for AI product roles where I
           can combine technical depth with product judgement to ship responsible,
           outcome-driven AI experiences.
         </p>
@@ -74,48 +77,77 @@
     <section class="section section-alt" id="projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <p class="section-sub">Selected work — placeholders to be replaced with final case studies.</p>
+        <p class="section-sub">Selected work — every project ships with real usage and real numbers.</p>
         <div class="project-grid">
+
           <article class="project-card">
             <div class="project-head">
-              <h3>RAG Q&amp;A Agent</h3>
-              <span class="project-status">Case study</span>
+              <h3>CourseTranslate — AI Lecture Interpreter &amp; Notes</h3>
+              <span class="project-status">Open Source</span>
             </div>
             <p class="project-desc">
-              A retrieval-augmented question-answering system that grounds LLM responses
-              in a private knowledge base, with hallucination control and an evaluation
-              pipeline for answer quality, faithfulness, and retrieval recall.
+              Real-time lecture transcription with bilingual interpretation
+              (faster-whisper + switchable translation engines) and an agent that
+              turns transcripts + slides into structured notes and concept cards in
+              Obsidian. Built for my own English-taught MSc classes — I use it every
+              lecture and it is open to classmates.
             </p>
             <ul class="tag-list" aria-label="Tech stack">
+              <li>Python</li>
+              <li>Whisper ASR</li>
               <li>LLM</li>
-              <li>RAG</li>
-              <li>LangChain</li>
-              <li>Evaluation</li>
+              <li>Agent</li>
             </ul>
             <div class="project-links">
-              <a href="#" class="link" aria-label="View RAG project details">View details →</a>
+              <a href="https://github.com/rehtd/course-translate" class="link" target="_blank" rel="noopener">GitHub →</a>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-head">
-              <h3>Customer Churn Dashboard</h3>
-              <span class="project-status">Case study</span>
+              <h3>Bilingual Financial Consumer Q&amp;A (RAG)</h3>
+              <span class="project-status">Measured</span>
             </div>
             <p class="project-desc">
-              An end-to-end churn analysis project: SQL-based feature engineering,
-              a churn-prediction model, and an interactive dashboard that surfaces
-              high-risk segments, key drivers, and retention recommendations.
+              Bilingual RAG assistant grounded in 42 curated official HK
+              financial-education entries (IFEC / HKMA) with citation-backed answers
+              and compliance guardrails that reject investment recommendations.
+              Evaluated on 23 held-out questions with dual-annotator labeling:
+              Top-3 retrieval recall 95%, red-line fabrication rate 0.
+            </p>
+            <ul class="tag-list" aria-label="Tech stack">
+              <li>RAG</li>
+              <li>LangChain</li>
+              <li>ChromaDB</li>
+              <li>LLM Evaluation</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/rehtd/rag-qa-agent" class="link" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-head">
+              <h3>AI Job-Market Intelligence Platform</h3>
+              <span class="project-status">Private Demo</span>
+            </div>
+            <p class="project-desc">
+              Personal market-intelligence platform tracking 2,800+ live AI/PM roles
+              across 6 Hong Kong sources daily — dedup, salary normalization,
+              role taxonomy, and trend dashboards (FastAPI + ECharts). I use its
+              outputs to steer my own application strategy.
             </p>
             <ul class="tag-list" aria-label="Tech stack">
               <li>Python</li>
-              <li>SQL</li>
-              <li>Data Visualization</li>
+              <li>FastAPI</li>
+              <li>ECharts</li>
+              <li>SQLite</li>
             </ul>
             <div class="project-links">
-              <a href="#" class="link" aria-label="View Churn project details">View details →</a>
+              <a href="#contact" class="link">Private — demo on request</a>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -126,12 +158,13 @@
         <h2 class="section-title">Skills</h2>
         <ul class="skill-grid">
           <li class="skill-item">Python</li>
+          <li class="skill-item">RAG / LLM Applications</li>
+          <li class="skill-item">LLM Evaluation (Recall / Accuracy / Faithfulness)</li>
           <li class="skill-item">SQL</li>
           <li class="skill-item">Data Analytics / BI</li>
-          <li class="skill-item">LLM / RAG</li>
           <li class="skill-item">Product Requirements (PRD)</li>
           <li class="skill-item">Agile</li>
-          <li class="skill-item">Figma</li>
+          <li class="skill-item">FastAPI / ECharts</li>
         </ul>
       </div>
     </section>
@@ -146,14 +179,7 @@
               <h3>PSPO I</h3>
               <p>Professional Scrum Product Owner — Scrum.org</p>
             </div>
-            <span class="cert-status">In progress</span>
-          </li>
-          <li class="cert-item">
-            <div class="cert-main">
-              <h3>AWS Certified AI Practitioner</h3>
-              <p>Foundational understanding of AI/ML on AWS</p>
-            </div>
-            <span class="cert-status">In progress</span>
+            <span class="cert-status">In preparation</span>
           </li>
         </ul>
       </div>
@@ -174,11 +200,7 @@
           </li>
           <li>
             <span class="contact-label">Email</span>
-            <a href="mailto:1586447080@qq.com">1586447080@qq.com</a>
-          </li>
-          <li>
-            <span class="contact-label">LinkedIn</span>
-            <a href="#" aria-label="LinkedIn — coming soon">Coming soon</a>
+            <a href="mailto:lin1586447080@gmail.com">lin1586447080@gmail.com</a>
           </li>
         </ul>
       </div>
